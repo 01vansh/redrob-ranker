@@ -1,0 +1,54 @@
+team_name: "AI-Rankers"
+
+primary_contact:
+  name: "Vansh"
+  email: "primary@example.com"
+  phone: "+91-XXXXXXXXXX"
+
+team_members:
+  - name: "Vansh"
+    email: "primary@example.com"
+    role: "ML Engineer / Team Lead"
+
+github_repo: "https://github.com/YOUR_USERNAME/redrob-ranker"
+sandbox_link: "https://huggingface.co/spaces/YOUR_USERNAME/redrob-ranker"
+
+reproduce_command: "python rank.py --candidates ./candidates.jsonl --out ./submission.csv"
+
+compute:
+  platform: "Windows PC"
+  cpu_cores: 8
+  ram_gb: 16
+  python_version: "3.12"
+  os: "Windows 11"
+  uses_gpu_for_inference: false
+  has_network_during_ranking: false
+  pre_computation_required: false
+  pre_computation_time_minutes: 0
+
+ai_tools_used:
+  - "Antigravity IDE (Claude)"
+  - "GitHub Copilot"
+
+ai_usage_summary: |
+  Used AI tools for code structure and review.
+  All scoring logic, weights, and JD analysis done by the team.
+  No candidate data was fed to any LLM during ranking.
+
+methodology_summary: |
+  Rule-based + signal-weighted hybrid ranker.
+  Five scoring components: skills (40%), career/title (25%),
+  experience years (15%), education tier (10%), location (10%).
+  Behavioral signals (open_to_work, recency, GitHub, response rate,
+  interview completion) applied as a multiplicative modifier (0.3-1.35x).
+  Honeypot detection: penalizes expert skills with 0 months usage,
+  experience-tenure gaps > 3 years, near-zero profile completeness.
+  Runtime: ~60-90s for 100K candidates on CPU (well within 5min budget).
+  No GPU, no network, no API calls during ranking step.
+
+declarations:
+  read_submission_spec: true
+  code_is_original_work: true
+  no_collusion: true
+  honeypot_check_done: true
+  reproduction_tested: true
