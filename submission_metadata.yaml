@@ -2,16 +2,16 @@ team_name: "AI-Rankers"
 
 primary_contact:
   name: "Vansh"
-  email: "primary@example.com"
-  phone: "+91-XXXXXXXXXX"
+  email: "vanshrathod1008@gmail.com"
+  phone: "+91-9484448489"
 
 team_members:
   - name: "Vansh"
-    email: "primary@example.com"
+    email: "vanshrathod1008@gmail.com"
     role: "ML Engineer / Team Lead"
 
-github_repo: "https://github.com/YOUR_USERNAME/redrob-ranker"
-sandbox_link: "https://huggingface.co/spaces/YOUR_USERNAME/redrob-ranker"
+github_repo: "https://github.com/01vansh/redrob-ranker"
+sandbox_link: "https://huggingface.co/spaces/maheshdale/redrob-ranker"
 
 reproduce_command: "python rank.py --candidates ./candidates.jsonl --out ./submission.csv"
 
