@@ -1,3 +1,13 @@
+---
+title: Redrob AI Candidate Ranker Sandbox
+emoji: 🎯
+colorFrom: red
+colorTo: blue
+sdk: docker
+app_port: 7860
+pinned: false
+---
+
 # Redrob AI — Intelligent Candidate Ranking System
 **India Runs Hackathon | Hack2Skill × Redrob AI**
 
